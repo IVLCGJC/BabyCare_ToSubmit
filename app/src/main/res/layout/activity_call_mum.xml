@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_call_mum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/call_mum"
+    tools:context="com.example.android.babycare.CallMum">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:baselineAligned="false">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@color/textOpaqueBackground"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/call_mum_activity"
+            android:textColor="@color/babyGirl"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.01"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/restart_game_over"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:background="@color/buttonBackground"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:onClick="restart"
+                android:text="@string/bu_yes"
+                android:textColor="@color/babyGirlBackground"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu_quit_game_over"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:background="@color/buttonBackgroundPapa"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:onClick="quitScreen"
+                android:text="@string/bu_quit"
+                android:textColor="@color/babyGirlBackground"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

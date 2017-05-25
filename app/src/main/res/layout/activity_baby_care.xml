@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_baby_care"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/babyGirlBackground"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context="com.example.android.babycare.BabyCare">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/babyname"
+                    style="@style/nameStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/baby_name"
+                    android:textColor="@color/babyGirl" />
+
+                <ImageView
+                    android:id="@+id/baby_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/babyhappy" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/baby_underline"
+                style="@style/underlineStyle"
+                android:background="@color/babyGirl"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_baby_happiness"
+                    style="@style/statsStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/happiness"
+                    android:textColor="@color/babyGirl" />
+
+                <ImageView
+                    android:id="@+id/light_baby_happiness"
+                    style="@style/statsImageStyle" />
+
+                <TextView
+                    android:id="@+id/baby_happiness"
+                    style="@style/statsCounterStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/placeholder_number"
+                    android:textColor="@color/babyGirl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_feed_level"
+                    style="@style/statsStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/feed_level"
+                    android:textColor="@color/babyGirl" />
+
+                <ImageView
+                    android:id="@+id/light_feed_level"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/light_grey" />
+
+                <TextView
+                    android:id="@+id/baby_feed"
+                    style="@style/statsCounterStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/placeholder_number"
+                    android:textColor="@color/babyGirl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_diaper_level"
+                    style="@style/statsStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/diaper_level"
+                    android:textColor="@color/babyGirl" />
+
+                <ImageView
+                    android:id="@+id/light_diaper"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/light_grey" />
+
+                <TextView
+                    android:id="@+id/baby_diaper"
+                    style="@style/statsCounterStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/placeholder_number"
+                    android:textColor="@color/babyGirl" />
+            </LinearLayout>
+
+            <View
+                style="@style/underlineStyleBottom"
+                android:id="@+id/baby_underline_b"
+                android:background="@color/babyGirl" ></View>
+        </LinearLayout>
+
+        <!-- Father part -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/papa_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/papahappy" />
+
+                <TextView
+                    android:id="@+id/papaname"
+                    style="@style/nameStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/papa_name"
+                    android:textColor="@color/papa" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                style="@style/underlineStyle"
+                android:background="@color/papa"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/papa_happiness"
+                    style="@style/statsCounterStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/placeholder_number"
+                    android:textColor="@color/papa" />
+
+                <ImageView
+                    android:id="@+id/light_papa_happiness"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/light_grey" />
+
+                <TextView
+                    style="@style/statsStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/happiness"
+                    android:textColor="@color/papa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/papa_tiredness"
+                    style="@style/statsCounterStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/placeholder_number"
+                    android:textColor="@color/papa" />
+
+                <ImageView
+                    android:id="@+id/light_tiredness"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/light_grey" />
+
+                <TextView
+                    style="@style/statsStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/tiredness"
+                    android:textColor="@color/papa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/pee_level"
+                    style="@style/statsCounterStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/placeholder_number"
+                    android:textColor="@color/papa"/>
+
+                <ImageView
+                    android:id="@+id/light_pee_level"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/light_grey" />
+
+                <TextView
+                    style="@style/statsStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/pee_level"
+                    android:textColor="@color/papa" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                style="@style/underlineStyleBottom"
+                android:background="@color/papa"></View>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Info field -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@color/info_bg"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/placeholder"
+            android:textColor="@color/babyGirl"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Buttons part -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/gameButtonLayoutStyle">
+
+                <Button
+                    style="@style/gameButtonStyle"
+                    android:id="@+id/bu_baby_play"
+                    android:background="@color/buttonBackground"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="playIncrement"
+                    android:text="@string/bu_play_baby"
+                    android:textColor="@color/babyGirlBackground" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="H?"
+                    android:textColor="@color/babyGirl" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="H?+T"
+                    android:textColor="@color/papa" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameButtonLayoutStyle">
+
+                <Button
+                    style="@style/gameButtonStyle"
+                    android:id="@+id/bu_feed"
+                    android:background="@color/buttonBackground"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="feedIncrement"
+                    android:text="@string/bu_feed"
+                    android:textColor="@color/babyGirlBackground" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="+H+F"
+                    android:textColor="@color/babyGirl"/>
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="+T-H"
+                    android:textColor="@color/papa"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameButtonLayoutStyle">
+
+                <Button
+                    android:id="@+id/bu_diaper"
+                    style="@style/gameButtonStyle"
+                    android:background="@color/buttonBackground"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="changeDiaper"
+                    android:text="@string/bu_diaper"
+                    android:textColor="@color/babyGirlBackground" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="-H-D"
+                    android:textColor="@color/babyGirl" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="o.O"
+                    android:textColor="@color/papa"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameButtonLayoutStyle">
+
+                <Button
+                    android:id="@+id/bu_sleep"
+                    style="@style/gameButtonStyle"
+                    android:background="@color/buttonBackground"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="sleep"
+                    android:text="@string/bu_sleep"
+                    android:textColor="@color/babyGirlBackground" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Zzz"
+                    android:textColor="@color/babyGirl" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text=":)"
+                    android:textColor="@color/babyGirl" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/gameButtonLayoutStyle">
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="O.O"
+                    android:textColor="@color/babyGirl"/>
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="+H"
+                    android:textColor="@color/papa" />
+
+                <Button
+                    android:id="@+id/bu_play_game"
+                    style="@style/gameButtonStyle"
+                    android:background="@color/buttonBackgroundPapa"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="playPapa"
+                    android:text="@string/bu_play_game"
+                    android:textColor="@color/babyGirlBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameButtonLayoutStyle">
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="+P"
+                    android:textColor="@color/papa" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="+H"
+                    android:textColor="@color/papa"
+                    />
+
+                <Button
+                    android:id="@+id/bu_drink_beer"
+                    style="@style/gameButtonStyle"
+                    android:background="@color/buttonBackgroundPapa"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="drinkBeer"
+                    android:text="@string/bu_drink_beer"
+                    android:textColor="@color/babyGirlBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameButtonLayoutStyle">
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Ahh"
+                    android:textColor="@color/papa" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="+H-P"
+                    android:textColor="@color/papa" />
+
+                <Button
+                    android:id="@+id/bu_pee"
+                    style="@style/gameButtonStyle"
+                    android:background="@color/buttonBackgroundPapa"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="pee"
+                    android:text="@string/bu_pee"
+                    android:textColor="@color/babyGirlBackground" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gameButtonLayoutStyle">
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="..."
+                    android:textColor="@color/babyGirl" />
+
+                <TextView
+                    style="@style/textNextToButtonStyle"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="-?T"
+                    android:textColor="@color/papa" />
+
+                <Button
+                    android:id="@+id/bu_take_a_nap"
+                    style="@style/gameButtonStyle"
+                    android:background="@color/buttonBackgroundPapa"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="nap"
+                    android:text="@string/bu_take_a_nap"
+                    android:textColor="@color/babyGirlBackground" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom part -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:baselineAligned="false"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/scoreCounterStyle"
+                android:fontFamily="sans-serif-medium"
+                android:layout_weight="2"
+                android:text="@string/score"
+                android:textColor="@color/papa" />
+
+            <TextView
+                android:id="@+id/papa_score"
+                style="@style/scoreCounterStyle"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/number_zero"
+                android:textColor="@color/papa"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu_pause"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:background="@color/buttonBackground"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:onClick="pause"
+                android:text="@string/bu_pause"
+                android:textColor="@color/babyGirlBackground"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu_reset"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:background="@color/info_bg"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:onClick="reset"
+                android:text="@string/bu_reset"
+                android:textColor="@color/babyGirl"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu_call_mum"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:background="@color/buttonBackgroundPapa"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:onClick="callMum"
+                android:text="@string/bu_call_mum"
+                android:textColor="@color/babyGirlBackground"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<resources>
+    <string name="_and_">&#160;and&#160;</string>
+    <string name="_baby_is_bvery_happy">&#160;baby is very happy!</string>
+    <string name="_does_not_feel_the_need_to_go_to_pee">&#160;does not feel the need to go to pee.</string>
+    <string name="_game_diff_with_score">&#160;game difficulty with a score of&#160;"</string>
+    <string name="_has_been_woken_up">&#160;has been woken up!</string>
+    <string name="_is_not_sleepy">&#160;is not sleepy!</string>
+    <string name="_is_not_tired">&#160;is not tired!</string>
+    <string name="_is_playing_game_happiness_plus">&#160;is playing a game. Happiness +</string>
+    <string name="_is_sleeping_already">&#160;is sleeping already&#8230;</string>
+    <string name="_is_taking_a_nap">&#160;is taking a nap.</string>
+    <string name="_is_taking_a_nap_already">&#160;is taking a nap, already!</string>
+    <string name="_on_">&#160;on&#160;</string>
+    <string name="ahhhh">Ahhhh&#8230;</string>
+    <string name="app_name">Baby Care Challenge</string>
+    <string name="are_you_sure_back_to_main_menu">If you want to go back to the main menu, please press back button again.</string>
+    <string name="are_you_sure_call_mum">Are you sure you want to call for Mum? If so, press the button again.</string>
+    <string name="are_you_sure_quit">To quit the game, please press back button again.</string>
+    <string name="baby_name" translatable="false">Lotti</string>
+    <string name="bu_back">Back</string>
+    <string name="bu_call_mum">Call mum!</string>
+    <string name="bu_credits" translatable="false">Credits</string>
+    <string name="bu_diaper">Diaper</string>
+    <string name="bu_drink_beer">1 Beer</string>
+    <string name="bu_easy">Easy</string>
+    <string name="bu_feed">Feed</string>
+    <string name="bu_hard">Hard</string>
+    <string name="bu_normal">Normal</string>
+    <string name="bu_pause">Pause</string>
+    <string name="bu_pee">Go to Pee</string>
+    <string name="bu_play">Play&#160;</string>
+    <string name="bu_play_baby">Play</string>
+    <string name="bu_play_game">Play Game</string>
+    <string name="bu_quit">Quit</string>
+    <string name="bu_restart">Restart</string>
+    <string name="bu_reset">Reset</string>
+    <string name="bu_resume">Resume</string>
+    <string name="bu_send_mail">Send e-mail</string>
+    <string name="bu_sleep">Sleep</string>
+    <string name="bu_take_a_nap">Take a nap</string>
+    <string name="bu_tutorial">Tutorial</string>
+    <string name="bu_yes">Yes</string>
+    <string name="button_height" translatable="false">36dp</string>
+    <string name="call_mum_activity">Mum is here, everything is wonderful! :) Would you like to play again?</string>
+    <string name="colon">:&#160;</string>
+    <string name="could_not_pee">&#160;could not manage to reach the lavatory!</string>
+    <string name="credits_a">Programming: Károly Sarok</string>
+    <string name="credits_b" translatable="false">©2017</string>
+    <string name="credits_c">Thank you my Love and my Baby for supporting me! :)</string>
+    <string name="credits_d">I"'d like to say thank you to the Udacity team and Google for this opportunity!</string>
+    <string name="credits_e">It was a lot of work and fun at the same time to create this game. At the end it did worth to make my wife happy with it.</string>
+    <string name="credits_f">I hope, a few people will enjoy it for a little while as well. :D</string>
+    <string name="credits_version">App"'s last modified version: 20170525</string>
+    <string name="diaper_level">Diaper level</string>
+    <string name="difficulty_selected">&#160;difficulty selected.</string>
+    <string name="dot" translatable="false">.</string>
+    <string name="drinking_beer">Drinking beer: </string>
+    <string name="due_to_difficulty">&#160;milliseconds due to the selected difficulty.</string>
+    <string name="easy_mode_selected">Easy mode selected</string>
+    <string name="feed_level">Feed level</string>
+    <string name="game_is_paused">Game is paused&#8230;</string>
+    <string name="game_is_paused_resume_to_continue">Game is paused, Resume to continue.</string>
+    <string name="game_is_resumed">Game is resumed&#8230;</string>
+    <string name="game_mode">Game mode:&#160;</string>
+    <string name="game_over">You failed as a parent.</string>
+    <string name="game_over_activity">You failed as a parent. Do you want to try again?</string>
+    <string name="game_over_sad_smiley" translatable="false">:((</string>
+    <string name="happiness">Happiness modified by: </string>
+    <string name="hard_mode_selected">Hard mode selected</string>
+    <string name="is_already_playing">&#160;is already playing&#8230;</string>
+    <string name="is_sleeping">&#160;is sleeping&#8230;</string>
+    <string name="is_taking_a_nap">&#160;is taking a nap&#8230;</string>
+    <string name="main_menu">Main menu</string>
+    <string name="main_tv_baby_boy">Baby boy</string>
+    <string name="main_tv_baby_girl">Baby girl</string>
+    <string name="main_tv_baby_name">Baby name</string>
+    <string name="main_tv_papa_name">Papa name</string>
+    <string name="mum_is_here">Mum is here, everybody is happy! :)</string>
+    <string name="nap">Nap&#160;</string>
+    <string name="normal_mode_selected">Normal mode selected</string>
+    <string name="number_zero" translatable="false">0</string>
+    <string name="papa_name">Papa</string>
+    <string name="pee_level">Pee level</string>
+    <string name="pee_level_plus">&#160;pee level +</string>
+    <string name="placeholder" translatable="false">Placeholder Text Placeholder Text Placeholder Text Placeholder Text</string>
+    <string name="placeholder_number" translatable="false">999</string>
+    <string name="quit_screen">Bye-bye!</string>
+    <string name="s_diaper_overflow">"'s Diaper overflow!!!</string>
+    <string name="s_feed_level_drop_to_zero">"'s Feed level dropped to 0.&#160;</string>
+    <string name="s_happiness_">"'s happiness&#160;</string>
+    <string name="s_happiness_at_max">"'s Happiness is at maximum!</string>
+    <string name="s_happiness_drop_to_zero">"'s Happiness dropped to 0.&#160;</string>
+    <string name="s_happiness_minus">"'s happiness&#160;</string>
+    <string name="s_happiness_plus">"'s happiness +</string>
+    <string name="s_tiredness_fell_asleep">"'s Tiredness level made him fell asleep</string>
+    <string name="s_tiredness_plus">"'s tiredness +</string>
+    <string name="score">Score: (Less is better)</string>
+    <string name="select_difficulty">Select difficulty</string>
+    <string name="space" translatable="false">&#160;</string>
+    <string name="successfully_completed">&#160;successfully completed the BabyCareChallenge game</string>
+    <string name="tiredness">Tiredness</string>
+    <string name="tutorial_a">As a father, new challenges are awaiting you to successfully do the daily routine with your baby when mum is not around. Are you ready to make your baby happy, well fed and clean, while your happiness stays high, too?</string>
+    <string name="tutorial_b">The goal of the game is to reach Baby and Papa HAPPINESS and FEED LEVEL over 90 while TIREDNESS less than 50!</string>
+    <string name="tutorial_c">Use the buttons to reach the goal. PLAY with the Baby or FEED, CHANGE DIAPER if necessary and try not to overfeed. Papa can PLAY GAME, DRINK BEER for Happiness increase and TAKE A NAP if getting TIRED.</string>
+    <string name="tutorial_d">Experiment with the possibilities, but be aware that the results are not always as expected. Babies always have surprises for you.</string>
+    <string name="tutorial_e">Good luck and have fun!</string>
+    <string name="tutorial_f">Disclaimer: Any resemblance with reality is mere coincidence! :D</string>
+    <string name="tutorial_title">Tutorial</string>
+    <string name="winner_activity">You are a great parent! Do you want to play again?</string>
+    <string name="winner_activity_a">Congratulations!</string>
+    <string name="winner_activity_b">You have successfully completed the game on&#160;</string>
+    <string name="winner_activity_bb">&#160;difficulty.</string>
+    <string name="winner_activity_c">Your Score is:</string>
+    <string name="winner_subject" translatable="false">BabyCareChallenge Winner</string>
+    <string name="you_can_click_only">You can only click any button once every&#160;</string>
+
+</resources>

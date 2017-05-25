@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/babyGirlBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="portrait"
+    tools:context="com.example.android.babycare.MainMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/main_baby_name"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/main_tv_baby_name"
+            android:textAllCaps="true"
+            android:textColor="@color/babyGirl"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/main_papa_name"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/main_tv_papa_name"
+            android:textAllCaps="true"
+            android:textColor="@color/babyGirl"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <EditText
+            android:id="@+id/baby_name_field"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:hint="@string/baby_name"
+            android:inputType="textCapWords"
+            android:maxLength="12"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/papa_name_field"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:hint="@string/papa_name"
+            android:inputType="textCapWords"
+            android:maxLength="12"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="4dp"
+        android:background="@color/babyGirl"
+        android:baselineAligned="false"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="onGirlButtonClicked"
+                android:text="@string/main_tv_baby_girl"
+                android:textColor="@color/babyGirl"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="onBoyButtonClicked"
+                android:text="@string/main_tv_baby_boy"
+                android:textColor="@color/babyBoy"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:id="@+id/main_baby_pic"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/girl_sign" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="4dp"
+        android:background="@color/babyGirl"
+        android:baselineAligned="false"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/main_select_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/select_difficulty"
+            android:textAllCaps="true"
+            android:textColor="@color/babyGirl"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/easy_button"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/buttonBackground"
+            android:onClick="easyButton"
+            android:text="@string/bu_easy"
+            android:textColor="@color/babyGirlBackground" />
+
+        <Button
+            android:id="@+id/normal_button"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/buttonBackground"
+            android:onClick="normalButton"
+            android:text="@string/bu_normal"
+            android:textColor="@color/babyGirlBackground" />
+
+        <Button
+            android:id="@+id/hard_button"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/buttonBackground"
+            android:onClick="hardButton"
+            android:text="@string/bu_hard"
+            android:textColor="@color/babyGirlBackground" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="4dp"
+            android:background="@color/babyGirl"
+            android:baselineAligned="false"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tutorial_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@color/buttonBackground"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="tutorial"
+                    android:text="@string/bu_tutorial"
+                    android:textColor="@color/babyGirlBackground"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bu_quit_game_over"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="@color/buttonBackgroundPapa"
+                    android:fontFamily="sans-serif-medium"
+                    android:onClick="quitScreen"
+                    android:text="@string/bu_quit"
+                    android:textColor="@color/babyGirlBackground"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
